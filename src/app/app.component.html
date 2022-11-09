@@ -6,9 +6,14 @@
 </div>
 </div>
   <div *ngIf="isLoggedIn()">
-      <div class="p-3 mb-2">Welcome to {{ username }} profile<h3 style="color:#39C0ED">Employee Dashboard</h3></div>
-      <app-logincomponent>Add employee projects</app-logincomponent>
-  </div>
+
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1" style="color:#39C0ED" >Welcome to {{ username }} profile</span>
+      </div>
+    </nav>
+    <!-- <div class="p-3 mb-2">Welcome to {{ username }} profile<h3 style="color:#39C0ED">Project Details</h3></div> -->
+      <app-logincomponent></app-logincomponent>
    <!-- Above for sign out -->
 
    <div class="p-3 mb-2 bg-secondary text-white">
@@ -20,4 +25,5 @@
     <!-- <button type="button"(click)="login()" *ngIf="!isLoggedIn()" class="btn btn-primary mt-5" >Single Sign on</button> -->
 
   <div *ngIf="!isLoggedIn()">
-    <h4 style="color:#39C0ED">You are not logged in</h4></div>
+    <h4 style="color:#39C0ED">You are not logged in bebbo file</h4></div>
+    
